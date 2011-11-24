@@ -98,13 +98,12 @@ while ~isempty(email_contents)
     %
 
 
-
-
-
-
-
-
-
+    % easy way
+    [contains,index] = ismember(str,vocabList);
+    
+    if(contains)
+        word_indices = [word_indices ; index];
+    end;
 
     % =============================================================
 
